@@ -4,7 +4,22 @@ require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.15",
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.4",
+      },
+      {
+        version: "0.8.15",
+      },
+      {
+        version: "0.4.11",
+      },
+      {
+        version: "0.4.24",
+      },
+    ],
+  },
   networks: {
     localhost: {
       chainId: 31337,

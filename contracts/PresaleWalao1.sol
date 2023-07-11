@@ -2,7 +2,7 @@
  *Submitted for verification at Etherscan.io on 2023-02-12
 */
 
-pragma solidity 0.8.15;
+pragma solidity ^0.8.15;
 
 //SPDX-License-Identifier: MIT Licensed
 
@@ -108,7 +108,7 @@ contract PresaleWalao1 {
     event BuyToken(address indexed _user, uint256 indexed _amount);
 
     constructor(address _wesAddress) {
-        owner = payable(0x497eac525b20d155FD8a0aaCB964d5A230A40fD0);
+        owner = payable(0xf3f1A4EadA0D8a35d82421E303a139EBDC8E823f);
         priceFeedEth = AggregatorV3Interface(
             0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
         );

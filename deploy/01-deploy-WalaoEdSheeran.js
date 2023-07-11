@@ -38,7 +38,11 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     process.env.ETHERSCAN_API_KEY
   ) {
     await verify(walaoEdSheeran.address, []);
-    await verify(presaleWalao1.address, presaleWalao1Args);
+    await verify(
+      presaleWalao1.address,
+      presaleWalao1Args,
+      "contracts/PresaleWalao1.sol:PresaleWalao1"
+    );
   }
 };
 
